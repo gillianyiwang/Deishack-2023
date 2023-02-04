@@ -1,11 +1,11 @@
 package VVA.demo;
-
 //File imports
 import VVA.demo.Repository;
 
 //Spring boot imports
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -38,8 +38,12 @@ public class DemoApplication {
 	@GetMapping("/home")
 	public String home(){
 		//Render the login page html here
-		return "Hello World!"; // This is just a place holder. Remove when the html pages are ready
+		return "home"; // This is just a place holder. Remove when the html pages are ready
 	} 
+		@GetMapping("/login")
+		public String login(){
+			return "login";
+		}
 
 	@PostMapping("/submit")
 	public void create_user(){
