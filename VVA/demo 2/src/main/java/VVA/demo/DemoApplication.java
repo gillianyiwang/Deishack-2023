@@ -58,6 +58,7 @@ public class DemoApplication {
 			kid_statement.setString(5, ""); //family background 
 			kid_statement.setString(6, ""); //ambition
 
+	
 			//setting the params of the insert volunteer query 
 			volunteer_statement.setString(2, ""); //name
 			volunteer_statement.setInt(3, 4); //set the age, 4 is just a placeholder
@@ -66,6 +67,11 @@ public class DemoApplication {
 			volunteer_statement.setString(6, ""); //major
 			volunteer_statement.setString(7, ""); //username
 			volunteer_statement.setString(8, ""); //password
+
+			kid_statement.executeUpdate();
+			volunteer_statement.executeUpdate();
+
+
 		}
 		catch(SQLException e){}
 		
