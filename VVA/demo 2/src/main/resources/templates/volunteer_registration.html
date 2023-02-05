@@ -8,8 +8,8 @@
 
 <body>
 
-	<h1>Kids Registration</h1>
-	<form action="/kids/registration" method="get">
+	<h1>Volunteer Registration</h1>
+	<form action="/volunteer/registration" method="get">
 		<label for="Name">Name :</label> <br />
 		<input type="text" name="name" /> <br />
 
@@ -22,8 +22,12 @@
 		<label for="Age">Age :</label> <br />
 		<input type="age" name="age" /> <br />
 
-		<label for="fbackground">Family Background :</label> <br />
-		<textarea id="fbackground" name="fbackground" rows="4" cols="50"> </textarea>
+		<label for="interest">Interest :</label> <br />
+		<textarea id="interest" name="interest" rows="4" cols="50"> </textarea>
+		<br />
+
+        <label for="Major">Major :</label> <br />
+		<textarea id="Major" name="Major" rows="4" cols="50"> </textarea>
 		<br />
 
 		<label for="gender">Gender :</label> <br />
@@ -35,10 +39,6 @@
 		</select>
 
 		<br />
-
-		<label for="Ambition">Ambition :</label> <br />
-		<input type="Ambition" name="Ambition" /> <br />
-		<br/>
 
 		<button type="submit">Submit</button>
 	</form>

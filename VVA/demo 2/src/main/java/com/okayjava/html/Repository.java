@@ -1,11 +1,11 @@
-package VVA.demo;
+package com.okayjava.html;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Repository {
 	//url to connect to the database
-	String url = "jdbc:postgresql:COSI127BPATest?user=aartijain&password=liberty312001";
+	String url = "jdbc:postgresql:VVA_dev?user=aartijain&password=liberty312001";
 	String username = "aartijain";
 	String password;
 	

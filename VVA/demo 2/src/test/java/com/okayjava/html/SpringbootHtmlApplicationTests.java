@@ -1,10 +1,10 @@
-package VVA.demo;
+package com.okayjava.html;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class SpringbootHtmlApplicationTests {
 
 	@Test
 	void contextLoads() {
