@@ -1,5 +1,6 @@
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="animation.js"> </script>
 </head>
 
 <body>
@@ -7,6 +8,8 @@
     <h1>Jake's Timeline</h1>
   </header>
 
+  <!-- <section class="buttons">
+  
   <form action="/save", method="POST">
     <p> Describe What you did:</p>
     <input type="text">
@@ -14,8 +17,43 @@
     <p> Add a photo:</p>
     <input type="file" id="myFile" name="filename">
     <input type="submit">
-
   </form>
+
+  </section> -->
+
+   <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Add Entry</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/save", method="POST", class="form-container">
+    <h1>New Entry</h1>
+
+    <label for="text"><b>text description</b></label>
+    <input type="text" placeholder="Enter Text" name="text" required>
+
+    <label for="file"><b>image upload</b></label>
+    <input type="file" placeholder="Upload Photos" name="file">
+
+    <button type="submit" class="btn">post</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+  </form>
+</div> 
+
+<!-- The form -->
+<!-- <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Add An Entry</h1>
+
+      <label for="email"><b>text description</b></label>
+      <input type="text" placeholder="Enter Text" name="email" required>
+
+      <label for="psw"><b>image</b></label>
+      <input type="password" placeholder="Upload Photos" name="psw" required>
+
+      <button type="submit" class="btn">Post</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>  -->
 
   <div class="wrapper">
     <div class="center-line">
@@ -25,28 +63,20 @@
       <section>
         <i class="icon fas fa-home"></i>
         <div class="details">
-          <span class="title">Title of Section 1</span>
-          <span>1st Jan 2021</span>
+          <span class="title">Fishing!</span>
+          <span>1st July 2022</span>
         </div>
-        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
+        <p>went fishing with my favorite kid!</p>
       </section>
     </div>
     <div class="row row-2">
       <section>
         <i class="icon fas fa-star"></i>
         <div class="details">
-          <span class="title">Title of Section 2</span>
-          <span>2nd Jan 2021</span>
+          <span class="title">Soccer fun</span>
+          <span>2nd June 2022</span>
         </div>
-        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
+        <p>5-1!</p>
       </section>
     </div>
     <div class="row row-1">
@@ -57,10 +87,6 @@
           <span>3rd Jan 2021</span>
         </div>
         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
       </section>
     </div>
     <div class="row row-2">
@@ -71,10 +97,6 @@
           <span>4th Jan 2021</span>
         </div>
         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
       </section>
     </div>
     <div class="row row-1">
@@ -85,10 +107,6 @@
           <span>5th Jan 2021</span>
         </div>
         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
       </section>
     </div>
     <div class="row row-2">
@@ -99,10 +117,6 @@
           <span>6th Jan 2021</span>
         </div>
         <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
       </section>
     </div>
   </div>
